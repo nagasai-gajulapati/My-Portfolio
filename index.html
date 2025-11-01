@@ -3,133 +3,304 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Naga Sai Gowd Gajulapati | Data Engineer Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media.css" />
   </head>
+
   <body>
+    <!-- ===== NAVIGATION ===== -->
     <nav id="desktop-nav">
-      <div class="logo">Naga Sai</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#Education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <div class="logo">Naga Sai Gowd</div>
+      <ul class="nav-links">
+        <li><a href="#profile">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+
+    <!-- ===== HAMBURGER MENU ===== -->
     <nav id="hamburger-nav">
-      <div class="logo">Naga Sai</div>
+      <div class="logo">Naga Sai Gowd</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <div class="menu-links">
+        <ul class="menu-links">
+          <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#Education" onclick="toggleMenu()">Education</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+        </ul>
       </div>
     </nav>
 
+    <!-- ===== PROFILE SECTION ===== -->
     <section id="profile">
       <div class="section__pic_container">
         <img
           src="./assets/pic1.jpg"
-          alt="Naga Sai profile picture"
+          alt="Profile Picture"
           class="profile-pic"
         />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Naga Sai</h1>
-        <p class="section__text__p2">Data Engineer</p>
+        <h1 class="title">Naga Sai Gowd Gajulapati</h1>
+        <p class="section__text__p2">Data Engineer | DataStage Developer</p>
+
         <div class="btn-container">
+          <button class="btn btn-color1" onclick="location.href='./#contact'">
+            Contact Me
+          </button>
           <button
             class="btn btn-color2"
             onclick="window.open('./assets/Nagasai_Resume_2025.pdf')"
           >
             Download CV
           </button>
-          <button class="btn btn-color1" onclick="location.href = './#contact'">
-            Contact Info
-          </button>
         </div>
+
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
-            alt="My linkedin profile"
+            alt="LinkedIn"
             class="icon social-icon"
-            onclick="location.href = 'https://www.linkedin.com/in/nagasaig1/'"
+            onclick="window.open('https://www.linkedin.com/in/nagasaig1/', '_blank')"
           />
           <img
             src="./assets/github.png"
-            alt="My GitHub profile"
+            alt="GitHub"
             class="icon social-icon"
-            onclick="location.href = 'https://github.com/nagasai9000'"
+            onclick="window.open('https://github.com/nagasai-gajulapati', '_blank')"
           />
         </div>
       </div>
     </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
+      <p class="section__text__p1">Get to Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic_container">
-          <img src="./assets/pic1.jpg" alt="profile-pic" class="about-pic" />
-        </div>
-        <div>
-          <div class="about-details-container">
-            <div class="about-containers">
-              <div class="details-container">
-                <img
-                  src="./assets/experience.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <h3>Experience</h3>
-                <p>
-                  2+ years <br />
-                  Data engineering
-                </p>
-              </div>
-              <div class="details-container">
-                <img
-                  src="./assets/education.png"
-                  alt="Education icon"
-                  class="icon"
-                />
-                <h3>Education</h3>
-                <p>B.Sc Bachelors Degree</p>
-              </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience Icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                As a <strong>results-driven Data Engineer</strong> with over
+                <strong>2+ years of hands-on experience</strong>, I specialize
+                in designing, developing, and maintaining robust
+                <strong>ETL (Extract, Transform, Load)</strong> solutions that
+                streamline data integration processes. Proficient in
+                <strong>IBM DataStage</strong>, I excel at extracting data from
+                diverse sources, applying complex transformations to meet
+                business objectives, and loading it into data warehouses for
+                accurate reporting and insightful analysis.
+              </p>
             </div>
-          </div>
-          <div class="about-text-container">
-            <p>
-              Results-driven Data Engineer with 2.5 years of experience in IBM
-              InfoSphere DataStage, IBM Db2, SQL Server, and Unix. Skilled in
-              designing, developing, and optimizing ETL workflows for data
-              integration and warehousing. Experienced in job automation, data
-              accuracy improvements, and performance tuning. Strong expertise in
-              Data Warehousing, parallel job development, and ETL process
-              optimization. Adept at solving complex data challenges and meeting
-              business requirements with precision.
-            </p>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education Icon"
+                class="icon"
+              />
+              <h3>Goal</h3>
+              <p>
+                Passionate about continuous learning, I am currently expanding
+                my skills in <strong>Azure Data Factory</strong>,
+                <strong>Azure Databricks</strong>, <strong>PySpark</strong>, and
+                <strong>Python</strong> to build scalable, cloud-based data
+                pipelines. Through self-learning and practical projects, I aim
+                to grow into a well-rounded Data Engineer prepared for the
+                evolving world of data and cloud technologies.
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <img
         src="./assets/arrow.png"
-        alt=""
+        alt="Arrow"
         class="icon arrow"
-        onclick="location.href = './#experience'"
+        onclick="location.href='./#Education'"
       />
     </section>
 
-    <script src="script.js"></script>
+    <!-- ===== EDUCATION SECTION ===== -->
+    <section id="Education">
+      <p class="section__text__p1">My Academic Journey</p>
+      <h1 class="title">Education</h1>
+
+      <div class="section-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="./assets/education.png"
+              alt="Education Icon"
+              class="icon"
+            />
+            <h3>B.Sc. Bachelor of Science in Mathematics</h3>
+            <p>
+              <strong>University:</strong> Adikavi Nannaya University (AKNU)
+              <br />
+              <strong>Location:</strong> Rajamahendravaram, Andhra Pradesh<br />
+              <strong>Year:</strong> 2019 – 2022 <br />
+              <strong>Percentage:</strong> 8.96
+            </p>
+          </div>
+
+          <div class="details-container">
+            <img
+              src="./assets/education.png"
+              alt="Education Icon"
+              class="icon"
+            />
+            <h3>Intermediate (MPC)</h3>
+            <p>
+              <strong>Colleage:</strong> Narayana Junior College <br />
+              <strong>Location:</strong> Rajamahendravaram, Andhra Pradesh
+              <br />
+              <strong>Year:</strong> 2017 – 2019 <br />
+              <strong>CGPA:</strong> 8.73
+            </p>
+          </div>
+
+          <div class="details-container">
+            <img
+              src="./assets/education.png"
+              alt="Education Icon"
+              class="icon"
+            />
+            <h3>High School</h3>
+            <p>
+              <strong>School:</strong> Swarna Bharathi EM High School
+              <br />
+              <strong>Location:</strong> Dharmavaram, West Godavari, Andhra
+              Pradesh<br />
+              <strong>Year:</strong> 2016 – 2017 <br />
+              <strong>CGPA:</strong> 9.0
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section id="experience">
+      <p class="section__text__p1">Professional Experience</p>
+      <h1 class="title">Experience</h1>
+
+      <div class="section-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="./assets/experience.png"
+              alt="Experience Icon"
+              class="icon"
+            />
+            <h3>Data Engineer</h3>
+            <p>
+              <strong>Organization:</strong> Nivi Software Solutions Pvt. Ltd.
+              <br />
+              <strong>Duration:</strong> January 2025 – Present <br />
+              <strong>Highlights:</strong> Designing and optimizing ETL
+              workflows for large-scale datasets using IBM DataStage,
+              implementing SCD Type 2 for historical data and fact table
+              management, while ensuring high performance and seamless data
+              delivery through efficient parallelism and automation.
+            </p>
+          </div>
+
+          <div class="details-container">
+            <img
+              src="./assets/experience.png"
+              alt="Project Icon"
+              class="icon"
+            />
+            <h3>Software Engineer (DataStage)</h3>
+            <p>
+              <strong>Organization:</strong> Nivi Software Solutions Pvt. Ltd.
+              <br />
+              <strong>Duration:</strong> June 2023 – December 2024 <br />
+              <strong>Highlights:</strong> Designed and optimized ETL jobs for
+              large-scale datasets using IBM DataStage, implemented parallelism
+              to enhance performance, and automated data integration workflows
+              for improved efficiency and reliability.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+
+      <div class="contact-container">
+        <div class="contact-box">
+          <div class="contact-item">
+            <img src="./assets/email.png" alt="Email Icon" class="icon" />
+            <a href="mailto:nagasaigajulapati@gmail.com"
+              >nagasaigajulapati@gmail.com</a
+            >
+          </div>
+          <div class="contact-item">
+            <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon" />
+            <a href="https://www.linkedin.com/in/nagasaig1/" target="_blank"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <ul class="footer-nav">
+        <li><a href="#profile">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="footer-text">
+        © 2025 Naga Sai Gowd Gajulapati | All Rights Reserved
+      </p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector(".menu-links");
+        const icon = document.querySelector(".hamburger-icon");
+        menu.classList.toggle("open");
+        icon.classList.toggle("open");
+      }
+    </script>
   </body>
 </html>
