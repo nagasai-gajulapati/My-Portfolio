@@ -33,8 +33,8 @@
         </div>
         <ul class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#Education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </ul>
@@ -318,7 +318,7 @@
     </section>
 
     <!-- ===== CONTACT SECTION ===== -->
-    <section id="contact">
+    <!-- <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
 
@@ -338,6 +338,47 @@
           </div>
         </div>
       </div>
+    </section> -->
+
+    <!-- ===== CONTACT SECTION ===== -->
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <img
+            src="./assets/telephone-call.png"
+            class="contact-icon"
+            alt="Phone"
+          />
+          <a href="tel:+918688799287" class="contact-text">+91 86887 99287</a>
+        </div>
+
+        <div class="contact-card">
+          <img src="./assets/email.png" class="contact-icon" alt="Email" />
+          <a href="mailto:nagasaigajulapati@gmail.com" class="contact-text">
+            nagasaigajulapati@gmail.com
+          </a>
+        </div>
+
+        <div class="contact-card center-item">
+          <img
+            src="./assets/linkedin.png"
+            class="contact-icon"
+            alt="LinkedIn"
+          />
+          <a
+            href="https://www.linkedin.com/in/nagasaig1"
+            target="_blank"
+            class="contact-text"
+          >
+            LinkedIn Profile
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- ===== FOOTER ===== -->
@@ -354,13 +395,10 @@
       </p>
     </footer>
 
-    <script>
-      function toggleMenu() {
-        const menu = document.querySelector(".menu-links");
-        const icon = document.querySelector(".hamburger-icon");
-        menu.classList.toggle("open");
-        icon.classList.toggle("open");
-      }
-    </script>
+    <button id="backToTop">
+      <img src="./assets/right.png" alt="Top" />
+    </button>
+
+    <script src="script.js"></script>
   </body>
 </html>
